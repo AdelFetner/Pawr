@@ -184,9 +184,9 @@ body{
     box-shadow: 0px 0px 3px 3px #ABB7FF;
 }
 
-/* Estilizado Article */
+/* Estilizado primer Article */
 
-#container-article{
+#container-first-article{
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -200,7 +200,7 @@ body{
     margin-top: 2%;
 }
 
-#article-left{
+#article-first-left{
     height: 100%;
     width: 55%;
     display: flex;
@@ -208,21 +208,26 @@ body{
     justify-content: center;
     align-items: flex-start;
     margin-left: 7%;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 
-#article-left h2{
+#article-first-left h2{
+    width: 75%;
     margin-top: 1em;
     letter-spacing: 0.7px;
     line-height: 1.3em;
     font-size: 3em;
 }
 
-#article-left p{
+#article-first-left p{
     width: 50%;
     margin-top: 0.8em;
     line-height: 1.1em;
-    font-size: 1.5em;
+    font-size: 1.3em;
+}
+
+/* Estilizado segundo Article */
+
+#container-second-article{
+    height: 100vh;
+    width: 100vw;
 }
