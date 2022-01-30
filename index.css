@@ -212,7 +212,7 @@ body{
 
 #article-first-left h2{
     width: 75%;
-    margin-top: 1em;
+    margin-bottom: 1.5em;
     letter-spacing: 0.7px;
     line-height: 1.3em;
     font-size: 3em;
@@ -230,4 +230,14 @@ body{
 #container-second-article{
     height: 100vh;
     width: 100vw;
+    background-color: #FFF;
+}
+
+#container-steps{
+    height: 40%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
