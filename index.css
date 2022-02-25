@@ -44,6 +44,12 @@ body{
     overflow-x: hidden;
 }
 
+img{
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /*Estilizado header*/
 
 #container-header{
