@@ -277,3 +277,10 @@ img{
 #img-steps{
     margin-bottom: 5rem;
 }
+
+/* Estilizado tercer Article */
+
+#container-third-article{
+    height: 200vh;
+    width: 100vw;
+}
