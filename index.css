@@ -283,4 +283,19 @@ img{
 #container-third-article{
     height: 200vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5%;
+}
+
+.third-art-section{
+    height: 22%;
+    width: 100%;
+}
+
+.third-art-img{
+    height: 100%;
+    width: 50%;
 }
