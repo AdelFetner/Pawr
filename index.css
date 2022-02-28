@@ -281,7 +281,7 @@ img{
 /* Estilizado tercer Article */
 
 #container-third-article{
-    height: 200vh;
+    height: 220vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -293,9 +293,52 @@ img{
 .third-art-section{
     height: 22%;
     width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third-art-section:nth-child(odd){
+    background-color: #F5F5F5;
 }
 
 .third-art-img{
-    height: 100%;
+    height: 80%;
     width: 50%;
 }
+
+.third-art-section-text{
+    height: 100%;
+    width: 50%;
+    padding-top: 2rem;
+    margin-left: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.third-art-span{
+    font-size: .85rem;
+    color: #474142ce;
+    text-transform: uppercase;
+}
+
+.third-art-heading{
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+
+.third-art-paragraph{
+    width: 70%;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+/* estilizando cuarto article */
+
+
+
+/* estilizando footer */
+
