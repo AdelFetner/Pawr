@@ -17,3 +17,16 @@ window.onscroll = function () {
     }
     scrollPrevio = scrollActual;
 }
+
+
+// redirección del cuarto artículo
+
+document.querySelector("#container-fourth-article").onclick = function (){
+    open("#")
+}
+
+
+// redirección login
+document.querySelector("#login-logo").onclick = function (){
+    open("#")
+}
