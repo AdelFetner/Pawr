@@ -27,7 +27,7 @@
                 <h1>Potenciá Argentina. Potenciá Startups</h1>
             </header>
             <p>Pawr! es donde las startups locales despegan.</p>
-            <button id="redirect-btn" class="btn-click">Empezá acá</button>
+            <button id="redirect-btn">Empezá acá</button>
         </div>
         <img src="assets/hero.svg" alt="Hero image" id="hero" draggable="false">
     </main>
@@ -37,7 +37,6 @@
             <h2>Una mejor manera de apoyar a Startups.</h2>
             <p>Pawr! está hecho para potenciar empresas de una manera más directa</p>
             <p>Ahora es tu momento de ayudar a los que hacen un futuro mejor.</p>
-            <!-- Acá podría ir botones *Conocé más* *¿Cómo empezar?* -->
         </div>
         <img src="assets/collaboration.svg" alt="Collaboration Logo" id="illustration-article" draggable="false">
     </article>
@@ -87,11 +86,13 @@
                 <p class="third-art-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officia eaque reiciendis quibusdam.</p>
             </div>
         </section>
+
     </article>
 
     <article id="container-fourth-article">
 
-
+        <h4 id="fourth-art-heading" class="fourth-art-text">Sumate vos también a Pawr!</h4>
+        <p class="fourth-art-text">Registrá tu cuenta y empezá a explorar miles de empresas!</p>
 
     </article>
 
@@ -100,6 +101,34 @@
 
 
     </footer>
+
+    <div id="login-back">
+        
+
+
+        <div id="login-modal">
+            
+            <div id="login-modal-upper">
+                <img src="assets/logo5.svg" alt="Imagen del Logo" id="login-logo" draggable="false">
+                <div id="container-login-upper-span">
+                    <a href="#" class="login-upper-anchor">Iniciar Sesión</a>
+                    <a href="#" class="login-upper-anchor">Registrarse</a>
+                </div>
+            </div>
+
+            <form action="" id="login-form">
+                <label for="user" class="login-label">Nombre de Usuario o Email</label>
+                <input type="text" name="user" class="login-input">
+            
+                <label for="password" class="login-label">Contraseña</label>
+                <input type="password" name="password" class="login-input">
+                <a href="" id="login-anchor">¿Olvidaste tu contraseña?</a>
+
+                <button id="login-btn">Ingresá</button>
+            </form>
+        </div>
+        
+    </div>
 
     <script src="index.js"></script>
 
