@@ -26,6 +26,35 @@ document.querySelector("#container-fourth-article").onclick = function (){
 }
 
 
+
+// abrir y cerrar login
+
+// variables 
+
+let openLogIn = document.querySelector("#login")
+
+let openRegister = document.querySelector("#register")
+
+let loginPopUp = document.querySelector("#login-back")
+
+// abrir
+
+openLogIn.onclick = function(){
+    loginPopUp.style.display = "flex"
+}
+
+openRegister.onclick = function(){
+    loginPopUp.style.display = "flex"
+}
+
+// cerrar
+
+
+loginPopUp.onclick = function (){
+    loginPopUp.style.display = "none";
+}
+
+
 // redirección login
 document.querySelector("#login-logo").onclick = function (){
     open("#")
