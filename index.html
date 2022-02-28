@@ -110,7 +110,7 @@
                 <img src="assets/logo5.svg" alt="Imagen del Logo" id="login-logo" draggable="false">
                 <div id="container-login-upper-span">
                     <a href="#" class="login-upper-anchor">Iniciar Sesión</a>
-                    <a href="#" class="login-upper-anchor">Registrarse</a>
+                    <a href="#" class="login-upper-anchor"  id="redirect-register-popup">Registrarse</a>
                 </div>
             </div>
 
@@ -122,7 +122,37 @@
                 <input type="password" name="password" class="login-input">
                 <a href="" id="login-anchor">¿Olvidaste tu contraseña?</a>
 
-                <button id="login-btn">Ingresá</button>
+                <button type="submit" id="login-btn">Ingresá</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <div id="register-back">
+        
+        <div id="register-modal">
+            
+            <div id="register-modal-upper">
+                <img src="assets/logo5.svg" alt="Imagen del Logo" id="register-logo" draggable="false">
+                <div id="container-register-upper-span">
+                    <a href="#" class="register-upper-anchor" id="redirect-login-popup">Iniciar Sesión</a>
+                    <a href="#" class="register-upper-anchor">Registrarse</a>
+                </div>
+            </div>
+
+            <form action="" id="register-form">
+                <label for="user" class="register-label">Nombre de Usuario o Email</label>
+                <input type="text" name="user" class="register-input">
+
+                <label for="password" class="register-label">Contraseña</label>
+                <input type="password" name="password" class="register-input">
+
+                <label for="" class="register-label">Confirmá la Contraseña</label>
+                <input type="password" name="password" class="register-input">
+
+                <button type="submit" id="register-btn">Registrate</button>
+
+                <p id="register-paragraph">Al registrarte, aceptás nuestros <a href="">Terminos y Condiciones</a> y nuestra <a href="">Política de Privacidad</a>.</p>
             </form>
         </div>
         
