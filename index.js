@@ -20,15 +20,15 @@ window.onscroll = function () {
 
 // variables 
 
-let openLogIn = document.querySelector("#login")
+let openLogIn = document.querySelector("#login");
 
-let openRegister = document.querySelector("#register")
+let openRegister = document.querySelector("#register");
 
-let logInPopUp = document.querySelector("#login-back")
+let logInPopUp = document.querySelector("#login-back");
 
-let registerPopUp = document.querySelector("#register-back")
+let registerPopUp = document.querySelector("#register-back");
 
-let btnMainRegister = document.querySelector("#redirect-btn")
+let btnMainRegister = document.querySelector("#redirect-btn");
 
 let fourthArticle = document.querySelector("#container-fourth-article")
 
@@ -90,5 +90,27 @@ document.querySelector("#login-logo").onclick = function (){
 document.querySelector("#register-logo").onclick = function (){
     open("#")
 }
+
+
+
+// abrir y cerrar menú mobile
+
+let menuClose = document.querySelector("#menu-open");
+
+let menuIconHeader = document.querySelector("#menu-header");
+
+let menuIcon = document.querySelector("#menu-mobile");
+
+// abrir
+
+menuIconHeader.onclick = function openMenu(){
+    menuClose.style.display = "flex"
+}
+
+// cerrar
+menuIcon.onclick = function closeMenu(){
+    menuClose.style.display = "none";
+}
+
 
 
