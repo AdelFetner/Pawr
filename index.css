@@ -739,6 +739,10 @@ button{
         height: 85vh;
         width: 55vw;
     }
+
+    #login-btn{
+        margin: 2rem 0 4.2rem 0
+    }
 }
 
 @media (max-width: 768px){
@@ -792,8 +796,8 @@ button{
         width: 75vw;
     }
 
-    #login-btn{
-        margin: 2rem 0 4.1rem 0;
+    #login-btn {
+        margin: 2rem 0 4.15rem 0;
     }
 }
 
@@ -941,6 +945,13 @@ button{
         justify-content: center;
         align-content: center;
     }
+
+    #login-modal,#register-modal {
+        height: 85vh;
+        width: 75vw;
+    }
+
+
 
 
     #menu-open{
