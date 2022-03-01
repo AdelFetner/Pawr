@@ -700,6 +700,12 @@ button{
     font-family: roboto;
 }
 
+
+/* estilizando menú hamburguesa */
+#menu-content{
+    display: none;
+}
+
 /* media queries */
 
 @media (max-width: 1024px){
