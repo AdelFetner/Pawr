@@ -277,6 +277,7 @@ button{
 }
 
 #img-steps{
+    width: 100%;
     margin-bottom: 5rem;
 }
 
@@ -429,13 +430,12 @@ button{
 .login-upper-anchor:hover{
     color: #1b2d91;
 }
-.login-upper-anchor:nth-child(1){
+.login-upper-anchor:nth-child(2){
     color: #2c4bff;
 }
-.login-upper-anchor:nth-child(1):hover{
+.login-upper-anchor:nth-child(2):hover{
     color: #1F35B3;
 }
-
 
 #login-form{
     height: 75%;
@@ -559,13 +559,12 @@ button{
 .register-upper-anchor:hover{
     color: #1b2d91;
 }
-.register-upper-anchor:nth-child(2){
+.register-upper-anchor:nth-child(1){
     color: #2c4bff;
 }
-.register-upper-anchor:nth-child(2):hover{
+.register-upper-anchor:nth-child(1):hover{
     color: #1F35B3;
 }
-
 
 #register-form{
     height: 75%;
