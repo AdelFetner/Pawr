@@ -818,12 +818,21 @@ button{
     }
 
     #menu-header{
+        display: block;
         filter: brightness(.5);
         margin-right: 15%;
     }
 
-    #menu-header:hover{
+    #menu-header:active{
         filter: brightness(0);
+    }
+
+    #register-logo,#login-logo {
+        height: 35%;
+    }    
+
+    #login-btn {
+        margin: 2rem 0 4.55rem 0;
     }
 
     #hero{
@@ -961,25 +970,126 @@ button{
 
 
     #menu-open{
-        display: none;
-        position: fixed;
         height: 100vh;
         width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
         background-color: #FFF;
         left: 0;
         top: 0;
     }
 
     #menu-content{
-        height: 70%;
-        width: 80%;
+        height: 100%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 5%;
     }
 
     .anchor-menu{
+        font-size: 1.2rem;
         margin: 5% 0;
+    }
+
+    #menu-mobile{
+        top: 5.2%;
+        left: 84%;
+        position: absolute;
+    }
+    #menu-mobile:active{
+        filter: brightness(.2);
+    }
+}
+
+@media (max-width: 375px){
+    
+    #main-left h1 {
+        line-height: 2.5rem;
+        font-size: 2.3em;
+        margin-top: 15%;
+    }
+    
+    #main-left p {
+        line-height: 1.2em;
+        font-size: 1.1em;
+    }
+
+    #article-first-left h2 {
+        width: 70%;
+        letter-spacing: 0;
+        font-size: 2.3em;
+    }
+
+    #article-first-left p {
+        width: 60%;
+        font-size: .9em;
+    }
+
+    .third-art-section {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .third-art-span{
+        text-align: center;
+    }
+
+    .third-art-heading{
+        text-align: center;
+    }
+
+    .third-art-paragraph{
+        display: none;
+    }
+    .fourth-art-text {
+    margin-left: 0;
+    text-align: center;
+    font-size: .9rem;
+    }
+
+    #login-logo,#register-logo {
+        height: 30%;
+    }
+    
+    #login-btn {
+        margin: 2rem 0 4.65rem 0;
+    }
+
+    #menu-mobile{
+        left: 83%;
+    }
+}
+
+@media (max-width: 320px){
+    #logo {
+        width: 50%;
+    }
+
+    #main-left h1 {
+        line-height: 2.2rem;
+        font-size: 2.2em;
+        width: 70%;
+    }
+
+    #second-art-heading {
+        font-size: 2.5rem;
+    }
+
+    #login-modal, #register-modal {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    #login-anchor {
+        margin-bottom: 62.5%;
+    }
+
+    #register-btn {;
+        margin: 8.8em 0 .5rem 0;
     }
 }
