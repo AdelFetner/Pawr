@@ -2,125 +2,151 @@
 <html lang="en">
 
 <head>
-    <meta property="og:image" content="https://pawr.vercel.app/assets/cleanlogo.jpg">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="596">
-    <meta property="og:title" content="Pawr!">
-    <meta property="og:description" content="Pawr! es donde conectás con empresas. Sin los pasos extra.">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Pawr!" />
+    <meta property="og:description" content="Pawr! es donde conectás con empresas. Sin pasos extra." />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pawr!</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
 </head>
 
 <body>
-
-    <header id="container-header">
-        <img src="assets/logo.svg" alt="Website Logo" id="logo" draggable="false">
+    <header id="container-header" class="header-on">
+        <img src="assets/logo.svg" alt="Logo de Pawr!" id="logo" draggable="false" />
         <nav id="container-nav">
-            <img src="assets/menu.svg" alt="Ícono de Menú desplegable" id="menu-header">
+
             <ul id="ul-nav">
-                <li><a href="#" id="register">Registrate</a></li>
-                <li><a href="#" id="login">Ingresá</a></li>
+                <li>
+                    <button type="button" id="register" class="btn-nav">
+                        Registrate
+                    </button>
+                </li>
+                <li>
+                    <button type="button" id="login" class="btn-nav">Ingresá</button>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main id="container-main">
-        <div id="main-left">
-            <header>
-                <h1>Potenciá Argentina. Potenciá Startups</h1>
-            </header>
-            <p>Pawr! es donde las startups locales despegan.</p>
-            <button id="redirect-btn">Empezá acá</button>
-        </div>
-        <img src="assets/hero.svg" alt="Hero image" id="hero" draggable="false">
+        <section id="main-text">
+            <h1 class="text heading" id="main-heading">
+                Potenciá Argentina Potenciá Startups
+            </h1>
+            <p class="text paragraph" id="main-paragraph">
+                Pawr! es donde las startups locales despegan
+            </p>
+            <button type="button" id="redirect-btn">Empezá acá</button>
+        </section>
+        <img src="assets/hero.svg" alt="Imagen Principal de Pawr!" id="hero" draggable="false" />
     </main>
 
-    <article id="container-first-article">
-        <div id="article-first-left">
-            <h2>Una mejor manera de apoyar a Startups.</h2>
-            <p>Pawr! está hecho para potenciar empresas de una manera más directa</p>
-            <p>Ahora es tu momento de ayudar a los que hacen un futuro mejor.</p>
-        </div>
-        <img src="assets/collaboration.svg" alt="Collaboration Logo" id="illustration-article" draggable="false">
+    <article id="container-first-article" class="article">
+        <section id="first-art-text">
+            <h2 class="text heading">Una mejor manera de apoyar a Startups.</h2>
+            <p class="text paragraph">
+                Pawr! está hecho para potenciar empresas de una manera más directa
+            </p>
+            <p class="text paragraph">
+                Ahora es tu momento de ayudar a los que hacen un futuro mejor.
+            </p>
+        </section>
+        <img src="assets/collaboration.svg" alt="Imagen de dos personas en acuerdo." id="first-art-img"
+            draggable="false" />
     </article>
 
-    <article id="container-second-article">
-        <header id="second-art-header">
-            <h3 id="second-art-heading">Empezá con Pawr!</h3>
-            <p id="second-art-paragraph">Con más de 8000 usuarios, y más de 1000 empresas, Pawr! es el mejor lugar para apoyar a StartUps Argentinas!</p>
-        </header>
-        <img src="assets/steps.svg" alt="Imagen de pasos de usuario de Pawr!" id="img-steps" draggable="false">
+    <article id="container-second-article" class="article">
+        <section id="second-art-text">
+            <h3 class="text heading">Empezá con Pawr!</h3>
+            <p id="second-art-paragraph" class="text paragraph">
+                Con más de 8000 usuarios, y más de 1000 empresas, Pawr! es el mejor
+                lugar para apoyar a StartUps Argentinas!
+            </p>
+        </section>
+        <img src="assets/steps.svg" alt="Pasos de usuario de Pawr!" id="img-steps" draggable="false" />
     </article>
 
-    <article id="container-third-article">
-
+    <article id="container-third-article" class="article">
         <section class="third-art-section">
-            <img src="assets/registrate.svg" alt="Imagen ilustrativa de registrarse" class="third-art-img" draggable="false">
             <div class="third-art-section-text">
-                <span class="third-art-span">Registrate</span>
-                <h3 class="third-art-heading">Lorem ipsum dolor sit.</h3>
-                <p class="third-art-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, ipsum perferendis inventore optio quibusdam consequatur</p>
+                <span class="third-art-span text paragraph">Registrate</span>
+                <h3 class="third-art-heading text heading">Lorem ipsum dolor sit.</h3>
+                <p class="third-art-paragraph text paragraph">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis,
+                    ipsum perferendis inventore optio quibusdam consequatur
+                </p>
             </div>
+            <img src="assets/registrate.svg" alt="Imagen ilustrativa de registrarse" class="third-art-img"
+                draggable="false" />
         </section>
 
         <section class="third-art-section">
-            <img src="assets/explorá.svg" alt="Imagen ilustrativa de explorar"  class="third-art-img" draggable="false">
             <div class="third-art-section-text">
-                <span class="third-art-span">Explorá</span>
-                <h3 class="third-art-heading">Lorem ipsum dolor sit.</h3>
-                <p class="third-art-paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum nihil culpa assumenda nemo explicabo id ea.</p>
+                <span class="third-art-span text paragraph">Explorá</span>
+                <h3 class="third-art-heading text heading">Lorem ipsum dolor sit.</h3>
+                <p class="third-art-paragraph text paragraph">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    nihil culpa assumenda nemo explicabo id ea.
+                </p>
             </div>
+            <img src="assets/explorá.svg" alt="Imagen ilustrativa de explorar" class="third-art-img"
+                draggable="false" />
         </section>
 
         <section class="third-art-section">
-            <img src="assets/conectá.svg" alt="Imagen ilustrativa de conectar"  class="third-art-img" draggable="false">
             <div class="third-art-section-text">
-                <span class="third-art-span">Conectá</span>
-                <h3 class="third-art-heading">Lorem ipsum dolor sit.</h3>
-                <p class="third-art-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem laudantium ex nemo voluptatibus libero fugit.</p>
+                <span class="third-art-span text paragraph">Conectá</span>
+                <h3 class="third-art-heading text heading">Lorem ipsum dolor sit.</h3>
+                <p class="third-art-paragraph text paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
+                    laudantium ex nemo voluptatibus libero fugit.
+                </p>
             </div>
+            <img src="assets/conectá.svg" alt="Imagen ilustrativa de conectar" class="third-art-img"
+                draggable="false" />
         </section>
 
         <section class="third-art-section">
-            <img src="assets/invertí.svg" alt="Imagen ilustrativa de invertir"  class="third-art-img" draggable="false">
             <div class="third-art-section-text">
-                <span class="third-art-span">Invertí</span>
-                <h3 class="third-art-heading">Lorem ipsum dolor sit.</h3>
-                <p class="third-art-paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo officia eaque reiciendis quibusdam.</p>
+                <span class="third-art-span text paragraph">Invertí</span>
+                <h3 class="third-art-heading text heading">Lorem ipsum dolor sit.</h3>
+                <p class="third-art-paragraph text paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+                    officia eaque reiciendis quibusdam.
+                </p>
             </div>
+            <img src="assets/invertí.svg" alt="Imagen ilustrativa de invertir" class="third-art-img"
+                draggable="false" />
         </section>
-
     </article>
 
-    <article id="container-fourth-article">
-
-        <h4 id="fourth-art-heading" class="fourth-art-text">Sumate vos también a Pawr!</h4>
-        <p class="fourth-art-text">Registrá tu cuenta y empezá a explorar miles de empresas!</p>
-
+    <article id="container-fourth-article" class="article">
+        <h4 id="fourth-art-heading" class="fourth-art-text text heading">
+            Sumate vos también a Pawr!
+        </h4>
+        <p id="fourth-art-paragraph" class="fourth-art-text text paragraph">
+            Registrá tu cuenta y empezá a explorar miles de empresas!
+        </p>
     </article>
 
     <footer id="container-footer">
-        
-        <div class="footer-div">
-            <img src="assets/cleanlogo.svg" alt="Logo de Pawr!" id="footer-logo" draggable="false">
-            <h3 id="logo-motto">Sin los pasos extra</h3>
+        <section class="footer-div">
+            <img src="assets/cleanlogo.svg" alt="Logo de Pawr!" id="footer-logo" draggable="false" />
+            <span id="logo-motto">Sin los pasos extra</span>
             <div id="container-socialmedia">
-                <img src="assets/facebook.svg" alt="Facebook logo" class="socialmedia-footer" draggable="false">
-                <img src="assets/instagram.svg" alt="Instagram logo" class="socialmedia-footer" draggable="false">
-                <img src="assets/linkedin.svg" alt="LinkedIn logo" class="socialmedia-footer" draggable="false">
-                <img src="assets/twitter.svg" alt="Twitter logo" class="socialmedia-footer" draggable="false">
+                <img src="assets/facebook.svg" alt="Facebook logo" class="socialmedia-footer" draggable="false" />
+                <img src="assets/instagram.svg" alt="Instagram logo" class="socialmedia-footer" draggable="false" />
+                <img src="assets/linkedin.svg" alt="LinkedIn logo" class="socialmedia-footer" draggable="false" />
+                <img src="assets/twitter.svg" alt="Twitter logo" class="socialmedia-footer" draggable="false" />
             </div>
-        </div>
+        </section>
 
-        <div class="footer-div">
+        <section class="footer-div">
             <h4 class="heading-footer">Soporte</h4>
             <a href="" class="anchor-footer">Centro de Ayuda</a>
             <a href="" class="anchor-footer">Tutoriales</a>
@@ -130,9 +156,9 @@
             <a href="" class="anchor-footer">FAQ</a>
             <a href="" class="anchor-footer">Terminos de Uso</a>
             <a href="" class="anchor-footer">Privacidad de Datos</a>
-        </div>
+        </section>
 
-        <div class="footer-div">
+        <section class="footer-div">
             <h4 class="heading-footer">Funcionalidades</h4>
             <a href="" class="anchor-footer">Compras</a>
             <a href="" class="anchor-footer">Precio</a>
@@ -140,20 +166,20 @@
             <a href="" class="anchor-footer">Pagos</a>
             <a href="" class="anchor-footer">Análiticas</a>
             <a href="" class="anchor-footer">Estadísticas</a>
-            <a href="" class="anchor-footer">Pawr+</a>
+            <a href="" class="anchor-footer">Pawr!+</a>
             <a href="" class="anchor-footer">Billetera</a>
-        </div>
+        </section>
 
-        <div class="footer-div">
+        <section class="footer-div">
             <h4 class="heading-footer">Sobre Pawr!</h4>
             <a href="" class="anchor-footer">Nosotr@s</a>
             <a href="" class="anchor-footer">Posiciones abiertas</a>
             <a href="" class="anchor-footer">Prensa</a>
             <a href="" class="anchor-footer">Gaming</a>
             <a href="" class="anchor-footer">Pawr! 2022</a>
-        </div>
+        </section>
 
-        <div class="footer-div">
+        <section class="footer-div">
             <h4 class="heading-footer">Transparencia</h4>
             <a href="" class="anchor-footer">Linea Histórica</a>
             <a href="" class="anchor-footer">Blog Cultural</a>
@@ -161,81 +187,10 @@
             <a href="" class="anchor-footer">Ganancias</a>
             <a href="" class="anchor-footer">Roadmap</a>
             <a href="" class="anchor-footer">Changelog</a>
-        </div>
-
+        </section>
     </footer>
-
-    <div id="login-back">
-        
-        <div id="login-modal">
-            
-            <div id="login-modal-upper">
-                <img src="assets/logo.svg" alt="Imagen del Logo" id="login-logo" draggable="false">
-                <div id="container-login-upper-span">
-                    <a href="#" class="login-upper-anchor">Iniciar Sesión</a>
-                    <a href="#" class="login-upper-anchor"  id="redirect-register-popup">Registrarse</a>
-                </div>
-            </div>
-
-            <form action="" id="login-form">
-                <label for="user" class="login-label">Nombre de Usuario o Email</label>
-                <input type="text" name="user" class="login-input">
-                
-
-                <label for="password" class="login-label">Contraseña</label>
-                <input type="password" name="password" class="login-input">
-                
-
-                <a href="" id="login-anchor">¿Olvidaste tu contraseña?</a>
-
-                <button type="submit" id="login-btn">Ingresá</button>
-            </form>
-        </div>
-        
-    </div>
-
-    <div id="register-back">
-        
-        <div id="register-modal">
-            
-            <div id="register-modal-upper">
-                <img src="assets/logo.svg" alt="Imagen del Logo" id="register-logo" draggable="false">
-                <div id="container-register-upper-span">
-                    <a href="#" class="register-upper-anchor" id="redirect-login-popup">Iniciar Sesión</a>
-                    <a href="#" class="register-upper-anchor">Registrarse</a>
-                </div>
-            </div>
-
-            <form action="" id="register-form">
-                <label for="user" class="register-label">Nombre de Usuario o Email</label>
-                <input type="text" name="user" class="register-input">
-
-                <label for="password" class="register-label">Contraseña</label>
-                <input type="password" name="password" class="register-input">
-
-                <label for="" class="register-label">Confirmá la Contraseña</label>
-                <input type="password" name="password" class="register-input">
-
-                <button type="submit" id="register-btn">Registrate</button>
-
-                <p id="register-paragraph">Al registrarte, aceptás nuestros <a href="">Terminos y Condiciones</a> y nuestra <a href="">Política de Privacidad</a>.</p>
-            </form>
-        </div>
-        
-    </div>
-
-    <div id="menu-open">
-        <div id="menu-content">
-            <img src="assets/menu.svg" alt="Ícono de Menú desplegable" id="menu-mobile">
-            <a href="#" class="anchor-menu">¿Quienes somos?</a>
-            <a href="#" class="anchor-menu">Herramientas</a>
-            <a href="#" class="anchor-menu">Ingresá</a>
-            <a href="#" class="anchor-menu">Registrate</a>
-        </div>
-    </div>
-
+    <script src="classes.js"></script>
     <script src="index.js"></script>
-
 </body>
 
 </html>

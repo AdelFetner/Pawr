@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Source Sans Pro Regular";
+    src: url(/assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: "Source Sans Pro SemiBold";
+    src: url(/assets/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
+}
+@font-face {
+    font-family: "Source Sans Pro Bold";
+    src: url(/assets/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
+}
+@font-face {
+    font-family: "Source Sans Pro Black";
+    src: url(/assets/fonts/Source_Sans_Pro/SourceSansPro-Black.ttf);
+}
+@font-face {
+    font-family: "roboto";
+    src: url(/assets/fonts/roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: "roboto-light";
+    src: url(/assets/fonts/roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: "roboto-regular";
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    /* 1 rem = 10px */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+
+/* Estilizado del documenteo */
+
+#root-app{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #161B22;
+}
+
+#container-aside{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#nav-aside{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-anchor{
+    font-size: 3rem;
+}
+
+#container-article{
+    height: 100%;
+    width: 80%;
+    border: 0 solid #2f3336;
+    border-left-width: 1px;
+}
+
+
+.text{
+    color: #fafafa;
+    font-family: "roboto";
+}
