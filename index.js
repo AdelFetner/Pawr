@@ -319,7 +319,6 @@ const userLoadedIn = () => {
 window.addEventListener("DOMContentLoaded", () => {
     if ("Usuario" in localStorage) {
         console.log("Está usuario en local")
-        import app from home.js
         return false
     }
     if (!"Usuario" in localStorage) {
