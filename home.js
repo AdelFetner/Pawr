@@ -1,6 +1,8 @@
 window.addEventListener("DOMContentLoaded", () => {
     if ("Usuario" in localStorage) {
-        renderCards()
+        for (let index = 0; index < 20; index++) {
+            renderCards()
+        }
         return false
     }
     if (!"Usuario" in localStorage) {
@@ -109,15 +111,13 @@ const crearElemento = (elemento) => document.createElement(elemento)
 
 const renderCards = () => {
 
-
-    const homeApp = document.getElementById("home-app")
-
     arrCompanies.forEach(empresa => {
         const appLi = crearElemento("li")
         homeApp.append(appLi)
 
         const appCard = crearElemento("article")
         appCard.classList.add("app-card")
+        appCard.setAttribute("id", `${empresa.name}`)
         appLi.append(appCard)
 
 
@@ -172,32 +172,49 @@ const renderCards = () => {
 
 const containerSearchBar = document.getElementById("container-search-bar")
 const searchBar = document.getElementById("search-bar")
-const searchField = crearElemento("div")
 
-containerSearchBar.addEventListener("focusin", () => {
-    searchField.setAttribute("id", "search-field")
-    containerSearchBar.append(searchField)
-})
+const searchBarFilter = () => {
+    let searchBarValue = searchBar.value.toLowerCase()
 
-containerSearchBar.addEventListener("input", () => {
-    let valorSearchBar = searchBar.value.toLowerCase()
+    const searchResults = arrCompanies.filter(empresa => empresa.name.toLowerCase().includes(searchBarValue))
 
-    const searchResults = arrCompanies.filter(empresa => empresa.name.toLowerCase().includes(valorSearchBar))
-
-    searchResults.forEach(empresa => {
-        const searchResult = crearElemento("li")
-        searchResult.textContent = `${empresa.name}`
-        searchResult.classList.add("search-result", "text")
-        if (searchField.textContent.includes(searchResult.textContent)) {
-            searchField.innerHTML = ""
-            // searchField.textContent = ""
-            searchField.append(searchResult)
+    const cards = [...document.getElementsByClassName("app-card")]
+    cards.forEach(card => {
+        const cardID = card.getAttribute("id").toLowerCase()
+        if (cardID.includes(searchBarValue)) {
+            card.style.display = "block"
         } else {
-
-            searchField.append(searchResult)
+            card.style.display = "none"
         }
-    });
-})
+        console.log(card)
+    })
+    // console.log(cards)
+    // filterCards = cards.filter(card => card)
+
+
+    // const searchResult = crearElemento("li")
+    // searchResult.textContent = `${empresa.name}`
+    // searchResult.classList.add("search-result", "text")
+    // searchField.append(searchResult)
+}
+
+containerSearchBar.addEventListener("input", searchBarFilter)
+
+
+// searchResults.forEach(empresa => {
+//     const searchResult = crearElemento("li")
+//     searchResult.textContent = `${empresa.name}`
+//     searchResult.classList.add("search-result", "text")
+//     if (searchField.textContent.includes(searchResult.textContent)) {
+//         searchField.innerHTML = ""
+//         // searchField.textContent = ""
+//         searchField.append(searchResult)
+//     } else {
+
+//         searchField.append(searchResult)
+//     }
+// });
+
 
 containerSearchBar.addEventListener("pointerleave", () => {
     // searchField.remove()

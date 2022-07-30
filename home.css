@@ -130,23 +130,12 @@ img {
     font-size: 2rem;
     font-family: "Source Sans Pro Bold";
 }
-
-#search-field{
-    height: 40vh;
-    width: 50%;
-    position: absolute;
-    top: 5.5vh;
-    border: 0;
-    border-radius: 0 0 0.6rem 0.6rem;
-    background-color: #e0e0e0;
-    box-shadow: 0.5rem 1rem 2rem 0px #0000001a;
-    overflow: hidden;
-}
-
-.search-result{
-    margin: 1rem 3rem;
-    font-family: "Source Sans Pro SemiBold";
-    font-size: 2rem;
+#search-bar::-webkit-search-cancel-button{ 
+    -webkit-appearance: none;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 1rem;
+    background: #1d1c23;
 }
 
 #container-home{
