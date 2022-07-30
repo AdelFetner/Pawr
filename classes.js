@@ -1,35 +1,73 @@
-class Empresa{
-    constructor(name, userPic, background = "", description, totalFund = 0, redes, tags, topDonation){
-        this.name = name,
-        this.userPic = userPic,
-        this.background = background,
-        this.description = description,
-        this.totalFund = totalFund,
-        this.redes = [redes],
-        this.tags = [tags],
-        this.topDonation = {topDonation}
-    }
-}
+// let arrCompanies = []
 
-const Fosforito = new Empresa(
-    "Fosforito",
-    ["fosforo.com","twitter.com/fosforo"],
-    "Somos una empresa multimillonaria miamiiii",
-    ["Madera","Arquitectura","Cuarzo"],
-    150000,
-    "asd"
-)
-console.log(Fosforito)
-// class Product {
-// 	static currentID = 1;
+// const localStorageUser = JSON.parse(localStorage.getItem("Usuario")).user
 
-// 	constructor({ price, stock = 0, name, description, image }) {
-// 		this.ID = Product.currentID;
-// 		this.price = price;
-// 		this.stock = stock;
-// 		this.name = name;
-// 		this.description = description;
-// 		this.image = image;
+// class Company {
 
-// 		Product.currentID++;
-// 	}
+//     static currentID = 1
+
+//     constructor(
+//         name,
+//         userPfP = "",
+//         background = "",
+//         description = "Todavía no tiene descripción",
+//         totalFund = 0,
+//         socialMedia = [],
+//         tags = [],
+//         lastFunding = `Todavía nadie financió :(. ¡${localStorageUser}, Sé el primero en dar el paso!`) {
+
+//         this.ID = Company.currentID;
+//         this.name = name;
+//         this.userPfP = `url(${userPfP})`;
+//         this.background = `url(${background})`;
+//         this.description = description;
+//         this.totalFund = totalFund;
+//         this.socialMedia = [socialMedia];
+//         this.tags = [tags]
+//         this.lastFunding = lastFunding
+
+//         // Subir id al crear objeto
+//         Company.currentID++;
+
+//         // Meter empresa en array de objetos
+//         arrCompanies.push(Company)
+//     }
+
+//     // Actualizar url de foto de perfil de empresa
+//     updateUserPfP = (newUserPfP) => this.userPfP = newUserPfP
+
+//     // Actualizar url de background de perfil de empresa
+//     updateBackground = (newBackground) => this.background = newBackground
+
+//     // Actualizar descripción
+//     updateDescription = (newDescription) => this.description = String(newDescription)
+
+//     // Actualizar monto total de donación
+//     addFunding = (funding) => {
+//         this.totalFund += funding || 0
+//         this.lastFunding = `La última persona en financiar esta empresa fue ${localStorageUser}!`
+//     }
+
+//     // Actualizar redes
+//     updateSocialMedia = (newSocialMedia) => this.socialMedia = [newSocialMedia]
+
+//     // Actualizar tags
+//     updateTags = (newTags) => this.tags = [newTags]
+// }
+
+// const Fosforito = new Company(
+//     "Fosforito",
+//     "fosforo.png",
+//     "bg.png",
+//     "Somos una empresa multimillonaria miamiiii",
+//     150000,
+//     ["fosforo.com", "twitter.com/fosforo"],
+//     ["Madera", "Arquitectura", "Cuarzo"],
+//     "Juancito"
+// )
+// console.table(Fosforito)
+
+// console.log(arrCompanies)
+
+
+// export { arrCompanies, localStorage, Company } from "./classes.js"

@@ -1,6 +1,3 @@
-// import home from home.html
-
-
 // Hide Scroller
 const header = document.getElementById("container-header");
 
@@ -319,6 +316,7 @@ const userLoadedIn = () => {
 window.addEventListener("DOMContentLoaded", () => {
     if ("Usuario" in localStorage) {
         console.log("Está usuario en local")
+        location.replace("/home.html")
         return false
     }
     if (!"Usuario" in localStorage) {

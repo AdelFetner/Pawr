@@ -17,20 +17,25 @@
 
 <body>
     <main id="root-app">
-        <aside id="container-aside">
-            <nav id="nav-aside">
-                <ul>
-                    <li><a href="" class="nav-anchor text">Explorar</a></li>
-                    <li><a href="" class="nav-anchor text">Comunidades</a></li>
-                    <li><a href="" class="nav-anchor text">Más opciones</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <article id="container-article">
+
+        <header id="container-header">
+            <img src="home assets/logo.svg" alt="Logo de Pawr!" id="header-logo">
+
+            <article id="container-search-bar">
+                <img src="home assets/search-icon.svg" alt="Ícono de busqueda" id="search-icon">
+                <input type="search" id="search-bar">
+            </article>
+        </header>
+
+        <article id="container-home">
+
+            <ul id="home-app">
+            </ul>
 
         </article>
     </main>
-
+    <script type="module" src="classes.js"></script>
+    <script src="home.js"></script>
 </body>
 
 </html>

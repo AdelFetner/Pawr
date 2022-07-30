@@ -2,40 +2,47 @@
     font-family: "Source Sans Pro Regular";
     src: url(/assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
 }
+
 @font-face {
     font-family: "Source Sans Pro SemiBold";
     src: url(/assets/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf);
 }
+
 @font-face {
     font-family: "Source Sans Pro Bold";
     src: url(/assets/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf);
 }
+
 @font-face {
     font-family: "Source Sans Pro Black";
     src: url(/assets/fonts/Source_Sans_Pro/SourceSansPro-Black.ttf);
 }
+
 @font-face {
     font-family: "roboto";
     src: url(/assets/fonts/roboto/Roboto-Black.ttf);
 }
+
 @font-face {
     font-family: "roboto-light";
     src: url(/assets/fonts/roboto/Roboto-Light.ttf);
 }
+
 @font-face {
     font-family: "roboto-regular";
     src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
 }
 
-*{
+* {
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-html,body{
+html,
+body {
     height: 100%;
     width: 100%;
     /* 1 rem = 10px */
@@ -43,19 +50,19 @@ html,body{
     scroll-behavior: smooth;
 }
 
-body{
+body {
     overflow-x: hidden;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-height: 100%;
     max-width: 100%;
     -webkit-user-select: none;
@@ -68,47 +75,178 @@ img{
 
 /* Estilizado del documenteo */
 
-#root-app{
-    height: 100%;
+#root-app {
+    min-height: 100%;
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    background-color: #161B22;
+    background-color: #FAFAFA;
+    /* background-color: #1D1C23; */
 }
 
-#container-aside{
-    height: 100%;
-    width: 20%;
+#container-header{
+    height: 7vh;
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
-    left: 0;
+    z-index: 1;
+    background: #ffffff;
+    box-shadow: 0 1px 2px #0000000d, 0 1px 4px #0000000d, 0 2px 8px #0000000d;
 }
 
-#nav-aside{
-    height: 50%;
+#header-logo{
+    height: 65%;
+    padding-left: 5rem;
+}
+
+#container-search-bar{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5rem;
+    border-radius: .6rem;
+    background-color: #e0e0e0;
+    overflow: hidden;
+}
+
+#search-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+#search-bar{
+    height: 80%;
+    width: calc(95% - 2.4rem);
+    border: 0;
+    outline: 0;
+    padding: 1rem;
+    background-color: inherit;
+    font-size: 2rem;
+    font-family: "Source Sans Pro Bold";
+}
+
+#search-field{
+    height: 40vh;
+    width: 50%;
+    position: absolute;
+    top: 5.5vh;
+    border: 0;
+    border-radius: 0 0 0.6rem 0.6rem;
+    background-color: #e0e0e0;
+    box-shadow: 0.5rem 1rem 2rem 0px #0000001a;
+    overflow: hidden;
+}
+
+.search-result{
+    margin: 1rem 3rem;
+    font-family: "Source Sans Pro SemiBold";
+    font-size: 2rem;
+}
+
+#container-home{
+    min-height: 100%;
+    width: 80%;
+    margin: 14vh 0;
+}
+
+#home-app {
+    min-height: 100%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.app-card{
+    height: 25rem;
+    width: 23rem;
+    background-color: #fff;
+    border: 1px solid #0000001a;
+    border-radius: 1.2rem;
+    box-shadow: 0.5rem 0.5rem 1rem #0000001a;
+    overflow: hidden;
+}
+
+.app-card-bg{
+    height: 7.5rem;
+    width: 100%;
+    border-bottom: 1px solid #0000001a;
+}
+
+.card-bg-img{
+    height: 100%;
+    width: auto;
+    object-position: center;
+    object-fit: cover;
+}
+
+.app-card-userpfp{
+    height: 3rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.nav-anchor{
-    font-size: 3rem;
+.card-userpfp-img{
+    height: 6rem;
+    max-height: none;
+    width: auto;
+    transform: translate(0, -2.5rem);
+    border: 2px solid #fff;
+    border-radius: 100%;
+    box-sizing: content-box;
+    box-shadow: 0.5rem 0.5rem 1rem #0000001a;
 }
 
-#container-article{
-    height: 100%;
-    width: 80%;
-    border: 0 solid #2f3336;
-    border-left-width: 1px;
+.app-card-text{
+    height: calc(100% - 11.5rem);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-
-.text{
-    color: #fafafa;
-    font-family: "roboto";
+.card-heading{
+    font-size: 2.2rem;
+    font-family: 'Source Sans Pro SemiBold', "roboto";
 }
+
+.app-card-ul{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    column-gap: 1.5rem;
+}
+
+.card-tag{
+    font-size: 1.5rem;
+    padding: 0 0.4rem;
+    border: 1px solid grey;
+    border-radius: 1rem;
+    background-color: #FAFAFA;
+    cursor: default;
+}
+
+.card-span{
+    font-size: 2rem;
+}
+
+.text {
+    color: #1d1c23;
+    font-family: "Source Sans Pro Regular";
+}
+
